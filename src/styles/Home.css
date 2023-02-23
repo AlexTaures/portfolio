@@ -1,0 +1,22 @@
+.container{
+  text-align: center;
+  align-content: center;
+  align-items: center ;
+  display: flex;
+  width: 800px;
+  margin: auto;
+}
+
+.profilePhoto{
+  margin-top: 50px;
+  width: 500px;
+  padding: 25px;
+}
+
+.profilePhoto img{
+  box-shadow: -5px -5px 15px rgba(255, 255, 255, 0.1),
+  5px 5px 15px rgba(0,0,0,0.35);
+  border-radius: 50%;
+  width: 90%;
+}
+
