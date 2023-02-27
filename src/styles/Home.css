@@ -1,16 +1,25 @@
+@import url('https://fonts.cdnfonts.com/css/steamflix-grotesk');
+
+.mainContainer{
+  width: 100%;
+}           
+
 .container{
-  text-align: center;
-  align-content: center;
-  align-items: center ;
   display: flex;
-  width: 800px;
+  text-align: center;
   margin: auto;
+  width: 800px;
+  margin-top: 20px;
 }
+
 
 .profilePhoto{
   margin-top: 50px;
   width: 500px;
   padding: 25px;
+  margin:auto;
+  font-family: 'Steamflix Grotesk', sans-serif;
+                                                
 }
 
 .profilePhoto img{
@@ -18,5 +27,123 @@
   5px 5px 15px rgba(0,0,0,0.35);
   border-radius: 50%;
   width: 90%;
+}
+
+.line{
+  display: flex;
+  margin: auto;
+  width: 400px;
+  text-align: left;
+  font-family: 'Steamflix Grotesk', sans-serif;
+  padding-left: 25px;
+                                                
+}
+.line .tag{
+  color: rgb(103, 103, 103);
+  justify-self:center;
+  width: 100px;
+  font-weight: bold;
+}
+
+.line .info{
+  justify-content: center;
+  display: table-cell;
+  vertical-align: middle;
+  color: gray;
+}
+
+.line img{
+  height: 10%;
+  width: 10%;
+  padding-left: 25px;
+  align-self: center;
+}
+
+h2{
+  text-align: left;
+  padding: 5px 25px 5px 25px;
+  color: rgb(229, 66, 31);
+  font-size: 2em;
+  font-family: 'Steamflix Grotesk', sans-serif;
+  display: flex;
+}
+.container h2 .bar{
+  width: 5px;
+  height: auto;
+  margin-right: 15px;
+  background:rgb(229, 66, 31);
+}
+
+.subContainer{
+  padding-left: 25px;
+}
+
+/**************************LEVEL REFERENCE************/
+.head{
+  display: flex;
+  text-align: center;
+}
+
+.head h2{
+  width: auto;
+}
+
+.level-reference h3{
+  width: 175px;
+  align-self: center;
+}
+.level-reference{
+  color: rgb(229, 66, 31);
+  font-family: 'Steamflix Grotesk', sans-serif;
+  margin-left: 25px;
+  text-align: left;
+  display: flex;
+
+}
+
+.level_line{
+  display: flex;
+}
+.level_line p{
+  align-self: center;
+  margin-left: 15px;
+}
+.fill, .empty{
+  height: 15px;
+  width: 15px;
+  align-self: center;
+  margin: 2px;
+}
+.fill{
+  background: rgb(229, 66, 31);
+}
+
+.empty{
+  background: gray;
+}
+
+/*************technical Skills Wrapper*******/
+.skill_line{
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  padding-left: 15px;
+  font-family: 'Steamflix Grotesk', sans-serif;
+  
+}
+.skill_line:hover{
+  background: rgba(128, 128, 128, 0.5); 
+  border-radius: 25px;
+
+}
+.skill_line i, .skill_line p{
+  padding: 2px;
+}
+.skills_container {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  grid-gap: 5px;
+  width:70%;
+  margin: auto;
 }
 

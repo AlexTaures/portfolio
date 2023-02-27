@@ -1,0 +1,72 @@
+.proj_mainContainer{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 5px;
+  width:70%;
+  margin: auto;
+  margin-top: 25px;
+  text-decoration: none;
+  color: black;
+}
+
+.proj_mainContainer img{
+  width: auto;
+  height: 150px;
+  margin-bottom: 10px;
+}
+
+.proj_container{
+  border: dashed gray 2px;
+  padding: 10px;
+  border-radius: 25px;
+  background: rgba(255, 255, 255, 0.5);
+  justify-content: center;
+  text-align: center;
+}
+
+.tittle{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+.tittle p{
+  font-weight: bold;
+  background: rgb(229, 66, 31);
+  padding: 10px;
+  border-radius: 25px;
+  color: white;
+}
+
+.proj_container h5{
+  background: black;
+  padding: 10px;
+  border-radius: 5px;
+  color: white;
+  width: 60px;
+  margin: auto;
+}
+
+.body a{
+  font-weight: bold;
+  text-decoration: none;
+  color: rgb(229, 66, 31);
+  padding: 2px;
+  border-radius: 10px;
+}
+
+.body a:hover{
+  color: white;
+  background: rgb(229, 66, 31);;
+  
+}
+
+.proj_container:hover{
+  size-adjust: 150%;
+  cursor: pointer;
+  transform: scale(1.05);
+  box-shadow: -5px -5px 15px rgba(255, 255, 255, 0.1),
+  5px 5px 15px rgba(0,0,0,0.35);
+  transition: 0.3s;
+}

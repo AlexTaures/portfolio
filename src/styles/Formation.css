@@ -1,0 +1,17 @@
+.formation_container{
+  display: flex;
+}
+.arrow{
+  width: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.arrow_body{
+  margin-top: 20px;
+  width: 10%;
+  height: 200px;
+  background: black;
+}
+
