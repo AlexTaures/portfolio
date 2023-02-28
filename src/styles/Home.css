@@ -1,26 +1,73 @@
 @import url('https://fonts.cdnfonts.com/css/steamflix-grotesk');
 
+@media(min-width: 0){
+  .container{
+    display: block;
+    text-align: center;
+    margin: auto;
+    width: 100%;
+    margin-top: 20px;
+  }
+
+  .profilePhoto{
+    margin-top: 50px;
+    width: 300px;
+    padding: 25px;
+    margin:auto;
+    font-family: 'Steamflix Grotesk', sans-serif;                                              
+  }
+
+ 
+  .line{
+    display: flex;
+    margin: auto;
+    width: 350px;
+    text-align: left;
+    font-family: 'Steamflix Grotesk', sans-serif;
+    padding-left: 25px;                                              
+  }
+  
+}
+
+@media(min-width: 1200px){
+  .container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-items: center;
+    margin: auto;
+    width: 800px;
+    margin-top: 20px;
+  }
+
+  .profilePhoto{
+    margin-top: 50px;
+    width: 500px;
+    padding: 25px;
+    margin:auto;
+    font-family: 'Steamflix Grotesk', sans-serif;                                              
+  }
+
+  .line{
+    display: flex;
+    margin: auto;
+    width: 400px;
+    text-align: left;
+    font-family: 'Steamflix Grotesk', sans-serif;
+    padding-left: 25px;                                              
+  }
+
+}
+
 .mainContainer{
   width: 100%;
+  display: inline-block;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
 }           
 
-.container{
-  display: flex;
-  text-align: center;
-  margin: auto;
-  width: 800px;
-  margin-top: 20px;
-}
 
-
-.profilePhoto{
-  margin-top: 50px;
-  width: 500px;
-  padding: 25px;
-  margin:auto;
-  font-family: 'Steamflix Grotesk', sans-serif;
-                                                
-}
 
 .profilePhoto img{
   box-shadow: -5px -5px 15px rgba(255, 255, 255, 0.1),
@@ -29,19 +76,12 @@
   width: 90%;
 }
 
-.line{
-  display: flex;
-  margin: auto;
-  width: 400px;
-  text-align: left;
-  font-family: 'Steamflix Grotesk', sans-serif;
-  padding-left: 25px;
-                                                
-}
+
 .line .tag{
   color: rgb(103, 103, 103);
   justify-self:center;
-  width: 100px;
+  width: 25%;
+  padding-right: 10px;
   font-weight: bold;
 }
 
@@ -55,7 +95,7 @@
 .line img{
   height: 10%;
   width: 10%;
-  padding-left: 25px;
+  padding-left: 15px;
   align-self: center;
 }
 
@@ -67,25 +107,69 @@ h2{
   font-family: 'Steamflix Grotesk', sans-serif;
   display: flex;
 }
-.container h2 .bar{
+.bar{
   width: 5px;
   height: auto;
   margin-right: 15px;
   background:rgb(229, 66, 31);
 }
 
+
+
 .subContainer{
   padding-left: 25px;
 }
+.headContainer{
+  width: 100%;
+}
 
 /**************************LEVEL REFERENCE************/
-.head{
-  display: flex;
-  text-align: center;
+@media(min-width: 0){
+  .level-reference{
+    border-top: gray solid 1px;
+    border-bottom: gray solid 1px;
+  }
+  .level_line{
+    padding-left: 25%;
+    text-align: left;
+  }
+  .level_line p{
+    width: 100px;
+  }
 }
+
+@media(min-width: 800px){
+  .headContainer{
+    display: flex;
+    justify-content: center;
+  }
+ 
+  .level-reference{
+    display: flex;
+    align-items: center;
+    border: none;
+  }
+
+  .level-reference h3{
+    padding-right: 20px;
+  }
+  .level-reference .level_line{
+    padding-right: 10px;
+    padding-left: 0;
+  }
+
+  .level_line p{
+    width: auto;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+}
+
 
 .head h2{
   width: auto;
+  margin: auto;
+  padding-left: 25px;
 }
 
 .level-reference h3{
@@ -96,18 +180,12 @@ h2{
   color: rgb(229, 66, 31);
   font-family: 'Steamflix Grotesk', sans-serif;
   margin-left: 25px;
-  text-align: left;
-  display: flex;
-
 }
 
 .level_line{
   display: flex;
 }
-.level_line p{
-  align-self: center;
-  margin-left: 15px;
-}
+
 .fill, .empty{
   height: 15px;
   width: 15px;
@@ -125,9 +203,9 @@ h2{
 /*************technical Skills Wrapper*******/
 .skill_line{
   display: flex;
-  justify-content: left;
+  padding-left: 25px;
+  justify-content: center;
   align-items: center;
-  padding-left: 15px;
   font-family: 'Steamflix Grotesk', sans-serif;
   
 }
@@ -141,9 +219,87 @@ h2{
 }
 .skills_container {
   display: grid;
-  grid-template-columns: repeat(6, 1fr);
   grid-gap: 5px;
-  width:70%;
   margin: auto;
 }
+
+@media(min-width: 0){
+  .skills_container{
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .skills_container{
+    width:90%;
+  }
+
+  .skill_line p{
+    width: 100px;
+  }
+  .skill_line{
+    padding-left: 0;
+  }
+}
+
+@media(min-width: 700px){
+  .skills_container{
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .skills_container{
+    width:90%;
+  }
+
+  .skill_line p{
+    width: 100px;
+  }
+  .skill_line{
+    padding-left: 0;
+  }
+}
+@media(min-width: 1000px){
+  .skills_container{
+    grid-template-columns: repeat(4, 1fr);
+  }
+  .skills_container{
+    width:90%;
+  }
+
+  .skill_line p{
+    width: 100px;
+  }
+  .skill_line{
+    padding-left: 0;
+  }
+}
+
+@media(min-width: 1400px){
+  .skills_container{
+    grid-template-columns: repeat(5, 1fr);
+  }
+  .skills_container{
+    width:90%;
+  }
+
+  .skill_line p{
+    width: 100px;
+  }
+  .skill_line{
+    padding-left: 0;
+  }
+}
+
+@media(min-width: 1800px){
+  .skills_container{
+    grid-template-columns: repeat(6, 1fr);
+  }
+  .skills_container{
+    width:90%;
+  }
+
+  .skill_line p{
+    width: 100px;
+  }
+  .skill_line{
+    padding-left: 0;
+  }
+}
+
 

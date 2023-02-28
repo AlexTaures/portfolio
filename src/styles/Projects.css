@@ -1,14 +1,20 @@
 .proj_mainContainer{
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  justify-content: center;
+  text-align: center;
   grid-gap: 5px;
-  width:70%;
+  width:100%;
   margin: auto;
   margin-top: 25px;
   text-decoration: none;
   color: black;
 }
-
+@media(min-width: 0) {
+  .proj_mainContainer{
+    grid-template-columns: repeat(1, 1fr);  
+  }
+  
+}
 .proj_mainContainer img{
   width: auto;
   height: 150px;
@@ -16,6 +22,8 @@
 }
 
 .proj_container{
+  width: 350px;
+  margin: auto;
   border: dashed gray 2px;
   padding: 10px;
   border-radius: 25px;

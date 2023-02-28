@@ -36,25 +36,23 @@ export default function Home() {
         </div>
      </div>
       </div>
-      <div className="container">
-        <div className="subContainer">
-        <div className="head">
-          <h2><div className='bar'></div>TECH / DIGITAL SKILLS</h2>
-          <div className="level-reference">
-            <h3>LEVEL REFERENCE</h3>
-            <div className="level_line">
-              <p>Basic</p><div className="fill"></div><div className="empty"></div><div className="empty"></div>
+      
+        <div className="headContainer">
+            <h2><div className='bar'></div>TECH / DIGITAL SKILLS</h2>
+            <div className="level-reference">
+              <h3>LEVEL REFERENCE</h3>
+              <div className="level_line">
+                <p>Basic</p><div className="fill"></div><div className="empty"></div><div className="empty"></div>
+              </div>
+              <div className="level_line">
+                <p>Intermidiate</p><div className="fill"></div><div className="fill"></div><div className="empty"></div>
+              </div>
+              <div className="level_line">
+                <p>Advanced</p><div className="fill"></div><div className="fill"></div><div className="fill"></div>
+              </div>
             </div>
-            <div className="level_line">
-              <p>Intermidiate</p><div className="fill"></div><div className="fill"></div><div className="empty"></div>
-            </div>
-            <div className="level_line">
-              <p>Advanced</p><div className="fill"></div><div className="fill"></div><div className="fill"></div>
-            </div>
-          </div>
         </div>
-        </div>
-      </div>
+      
       <div className="skills_container">
         <div className="skill_line">
           <i className="fa-brands fa-html5"></i>

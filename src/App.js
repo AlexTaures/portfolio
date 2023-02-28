@@ -7,7 +7,7 @@ import Formation from './components/Formation';
 
 function App() {
   return (
-    <div>
+    <div className='app'>
    <div class="context">
    <Router>
       <div className='navbar'>
@@ -27,8 +27,7 @@ function App() {
             <Home/> 
           }/>
       
-      <Route path="*" element={<Navigate to="/" replace={true} />}
-    />
+      <Route path="*" element={<Navigate to="/" replace={true} />}/>
 
       </Routes>
    </Router>
