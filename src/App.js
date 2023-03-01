@@ -34,7 +34,7 @@ function App() {
     </div>
 
 
-<div className="area">
+<div className="area" >
             <ul className="circles">
                     <li></li>
                     <li></li>
