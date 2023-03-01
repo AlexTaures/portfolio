@@ -1,31 +1,9 @@
 .app{
   margin: 0;
   padding: 0;
-  text-align: center;
+  text-align: center; 
 }
 
-@media(min-width: 0px){
-  .navbar{
-    display: inline-flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    width: 100%;
-    padding: 5px;
-    background: black;
-    box-shadow: -5px -5px 15px rgba(255, 255, 255, 0.1),
-    5px 5px 15px rgba(0,0,0,0.35);
-  }
-  
-  .navlink, .externalLink{
-    padding: 10px 25px 10px 25px;
-    border-radius: 5px;
-    color: rgb(255, 255, 255);
-  }
-  
-}
-
-@media(min-width: 1200px){
   .navbar{
     display: inline-flex;
     justify-content: center;
@@ -43,11 +21,39 @@
     border-radius: 5px;
     color: rgb(255, 255, 255);
   }
+  
   .navlink:active, .externalLink:active{
-    background: rgb(229, 66, 31);;
+    background: rgb(229, 66, 31);
     color: white;
   }
+
+@media screen and (max-width: 1200px){
+  .navbar{
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+    padding: 5px;
+    background: black;
+    box-shadow: -5px -5px 15px rgba(255, 255, 255, 0.1),
+    5px 5px 15px rgba(0,0,0,0.35);
+  }
+  
+  .navlink, .externalLink{
+    padding: 10px 25px 10px 25px;
+    border-radius: 5px;
+    color: rgb(255, 255, 255);
+  }
+  
+  .navlink:active, .externalLink:active{
+    background: black;
+    color: white;
+  }
+  
 }
+
+
 
 
 .navlink:hover, .externalLink:hover{
@@ -62,16 +68,9 @@
 
 
 /******animated background********/
-@media(max-width:0){
-  .context{
-    z-index: 1;
-    background: linear-gradient(90deg, rgba(208,208,208,1) 0%, rgba(255,255,255,1) 100%); 
-  }
-  .area{
-    display: none;
-  }
-}
-@media(min-width: 1200px){
+
+
+
   .context {
     width: 100%;
     margin: 0;
@@ -82,14 +81,20 @@
     height: 100%;
   }
   
+  .circles li{
+    display: none;
+  }
+  @media screen and (min-width: 500px) {
+    .circles li{
+      display: block;
+    }
+  }
   
   .area{
     z-index: 1;
     background: linear-gradient(90deg, rgba(208,208,208,1) 0%, rgba(255,255,255,1) 100%); 
     width: 100%;
     height:100%;
-    
-   
   }
   
   .circles{
@@ -103,7 +108,6 @@
   
   .circles li{
     position: absolute;
-    display: block;
     list-style: none;
     width: 20px;
     height: 20px;
@@ -206,4 +210,3 @@
     }
   
   }
-}
