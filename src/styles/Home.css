@@ -21,7 +21,7 @@
   .line{
     display: flex;
     margin: auto;
-    width: 350px;
+    width: auto;
     text-align: left;
     font-family: 'Steamflix Grotesk', sans-serif;
     padding-left: 25px;                                              
@@ -118,6 +118,8 @@ h2{
 
 .subContainer{
   padding-left: 25px;
+  display: inline-block;
+  justify-content: center;
 }
 .headContainer{
   width: 100%;
@@ -221,6 +223,7 @@ h2{
   display: grid;
   grid-gap: 5px;
   margin: auto;
+  justify-content: center;
 }
 
 @media(min-width: 0){
@@ -229,6 +232,7 @@ h2{
   }
   .skills_container{
     width:90%;
+    scale: 0.85;
   }
 
   .skill_line p{
@@ -237,6 +241,7 @@ h2{
   .skill_line{
     padding-left: 0;
   }
+  
 }
 
 @media(min-width: 700px){
