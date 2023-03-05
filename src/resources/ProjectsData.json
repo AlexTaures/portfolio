@@ -1,0 +1,14 @@
+[
+  {
+    "tittle": "FETCHING POKEMON API",
+    "image": "pokeapi",
+    "summary": "The project uses pokemon data extrated from 'pokeapi.co', using React Js for map cards by type.",
+    "url": "https://alextaures.github.io/pkmn-project/"
+  },
+  {
+    "tittle": "FRONTEND-BACKEND PROJECT",
+    "image": "amazont",
+    "summary":"Final Project for Full Stack Jr Kodigo.org, simulating a virtual shop,  frontend and backend",
+    "url":"https://alextaures.github.io/Team1_FrontEnd/"
+  }
+]
